@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "388431500995",
+    "firebase_url": "https://naijagreencard-42acb.firebaseio.com",
+    "project_id": "naijagreencard-42acb",
+    "storage_bucket": "naijagreencard-42acb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:388431500995:android:35d2d3644bfba95dffb476",
+        "android_client_info": {
+          "package_name": "com.naijagreencard.naijagreencard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "388431500995-8265quhlfg3j685crlrfi9c546t5p04b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2jzCIozpl14ZKuKzv8-bsxfTmZqEfBF0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "388431500995-8265quhlfg3j685crlrfi9c546t5p04b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

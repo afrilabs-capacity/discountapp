@@ -37,4 +37,56 @@ class Validate {
     return null;
   }
 
+  /*
+   * Returns an error message if password is empty or less then 5 characters
+   */
+  static String passwordValidate(String value) {
+    if (value.trim().isEmpty) {
+      return 'Password required';
+    }
+
+    if(value.length<5) return 'Password must be 5 characters or more';
+    return null;
+  }
+
+
+  /*
+   * Returns an error message if required field is empty.
+   */
+  static String passwordConfirmValidate(String value, String password) {
+    if (value.trim().isEmpty) {
+      return 'Re-enter password to confirm';
+    }
+
+    if(value!=password) return 'Original password and  confirmed do not match';
+    return null;
+  }
+
+  /*
+   * Returns an error message if required field is empty.
+   */
+  static String validatePhone(String value, String message) {
+    if (value.trim().isEmpty) {
+      return message;
+    }
+
+    String pattern = r'(^(?:[+0]9)?[0-9]{10,12}$)';
+    RegExp regExp = new RegExp(pattern);
+//    if (value.length == 0) {
+//      return message='Please enter mobile number';
+//    }
+//    else
+//
+   if (!regExp.hasMatch(value)) {
+      return message='Please enter valid mobile number';
+    }
+
+if( value.trim().length>11)
+  return message="Phone number must be less then 11 digits";
+
+return null;
+
+  }
+
+
 }
